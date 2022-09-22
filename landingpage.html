@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.ARA SHOP</title>
+    <!-- CSS -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/vendor/css/nice-select.css">
+    <link rel="stylesheet" href="assets/vendor/css/flags.css">
+    <link rel="stylesheet" href="assets/vendor/css/slick.css">
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="menu-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-3 col-xl-2 col-lg-2 col-sm-3 col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/logos/logo.png" style="height: 80px; padding:20px" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-6" style="margin-left: -200px;">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">About</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="shop.html">Shop</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                PAGES
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                                                <li><a class="dropdown-item" href="account.html">Account Page</a></li>
+                                                <li><a class="dropdown-item" href="cart.html">Cart Page</a></li>
+                                                <li><a class="dropdown-item" href="compare.html">Compare Page</a></li>
+                                                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="account-link">
+                            <a href="register.html">Register</a>
+                            <span>/</span>
+                            <a href="register.html">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center g-md-4 g-sm-0">
+                    
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 col-sm-6 col-12 search-col">
+                        <div class="header-search">
+                            <form>
+                                <div class="wrap">
+                                    <select name="category" class="select">
+                                        <option value="">All Categories</option>
+                                        <option value="1">Women's Fashion</option>
+                                        <option value="2">Men's Fashion</option>
+                                        <option value="3">Photography </option>
+                                        <option value="4">Watches & Accessories</option>
+                                        <option value="5">TV & Home Appliances</option>
+                                        <option value="6">Bags & Shoes</option>
+                                        <option value="7">Toys , Kids & Babies</option>
+                                        <option value="8">Headphone</option>
+                                    </select>
+                                    <span class="devider"></span>
+                                    <input type="search" name="search" placeholder="What do you need?">
+                                </div>
+                                <button type="submit">
+                                    <span><i class="fa-light fa-magnifying-glass"></i></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-xl-3 col-lg-2 col-sm-2 col-6">
+                        <ul class="bottom-header-right d-flex align-items-center justify-content-end">
+                           <li class="header-cart-options">
+                                <a role="button" class="search-open d-sm-none"><i class="fa-light fa-magnifying-glass"></i></a>
+                                <a href="compare.html" class="compare-list-btn"><i class="fa-light fa-shuffle"></i></a>
+                                <a href="#" class="wish-list-btn">
+                                    <i class="fa-light fa-heart"></i>
+                                    <span class="quantity">02</span>
+                                </a>
+                                <a href="#" class="cart-list-btn">
+                                    <i class="fa-light fa-cart-shopping"></i>
+                                    <span class="quantity">03</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- FLASH DEAL SECTION START --------------------------------->
+    <div class="flash-deal">
+        <div class="container">
+            <div class="panel">
+                <div class="panel-header">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-2 col-6">
+                            <h2 class="title">Flash Deal!</h2>
+                        </div>
+                        <div class="col-lg-8 col-md-8 countdown-col">
+                            <div class="countdown-wrap d-flex">
+                                <h3>Ending Soon...</h3>
+                                <div id="flashDealCountdown" class="countdown"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-6">
+                            <div class="text-end">
+                                <a href="shop.html" class="explore-section">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="product-custom-row">
+                        <div class="custom-col">
+                            <div class="single-product-card">
+                                <div class="part-img">
+                                    <span class="off-tag">15%</span>
+                                    <img src="assets/pics/white-short-checkered.png" alt="Product">
+                                </div>
+                                <div class="part-txt">
+                                    <h4 class="product-name"><a href="shop-details.html">White short checkered</a></h4>
+                                    <p class="price"><span>$96.00</span>$75.00</p>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-option">
+                                    <ul>
+                                        <li>
+                                            <a role="button" class="add-to-cart">
+                                                <i class="fa-light fa-cart-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="add-to-wish">
+                                                <i class="fa-light fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="quick-view">
+                                                <i class="fa-light fa-image"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-details.html" class="view-product">
+                                                <i class="fa-light fa-eye"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-col">
+                            <div class="single-product-card">
+                                <div class="part-img">
+                                    <span class="off-tag">15%</span>
+                                    <img src="assets/pics/white-shirt.jpg" alt="Product">
+                                </div>
+                                <div class="part-txt">
+                                    <h4 class="product-name"><a href="shop-details.html">White shirt</a></h4>
+                                    <p class="price"><span>P96.00</span>P75.00</p>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-option">
+                                    <ul>
+                                        <li>
+                                            <a role="button" class="add-to-cart">
+                                                <i class="fa-light fa-cart-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="add-to-wish">
+                                                <i class="fa-light fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="quick-view">
+                                                <i class="fa-light fa-image"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-details.html" class="view-product">
+                                                <i class="fa-light fa-eye"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-col">
+                            <div class="single-product-card">
+                                <div class="part-img">
+                                    <span class="off-tag">15%</span>
+                                    <img src="assets/pics/shorts.jpg" alt="Product">
+                                </div>
+                                <div class="part-txt">
+                                    <h4 class="product-name"><a href="shop-details.html">Shorts</a></h4>
+                                    <p class="price"><span>P176.00</span>P155.00</p>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-option">
+                                    <ul>
+                                        <li>
+                                            <a role="button" class="add-to-cart">
+                                                <i class="fa-light fa-cart-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="add-to-wish">
+                                                <i class="fa-light fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="quick-view">
+                                                <i class="fa-light fa-image"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-details.html" class="view-product">
+                                                <i class="fa-light fa-eye"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-col">
+                            <div class="single-product-card">
+                                <div class="part-img">
+                                    <span class="off-tag">15%</span>
+                                    <img src="assets/pics/shoes.jpg" alt="Product">
+                                </div>
+                                <div class="part-txt">
+                                    <h4 class="product-name"><a href="shop-details.html">White Shoes</a></h4>
+                                    <p class="price"><span>P755.00</span>P705.00</p>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-option">
+                                    <ul>
+                                        <li>
+                                            <a role="button" class="add-to-cart">
+                                                <i class="fa-light fa-cart-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="add-to-wish">
+                                                <i class="fa-light fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="quick-view">
+                                                <i class="fa-light fa-image"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-details.html" class="view-product">
+                                                <i class="fa-light fa-eye"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-col">
+                            <div class="single-product-card">
+                                <div class="part-img">
+                                    <span class="off-tag">15%</span>
+                                    <img src="assets/pics/jacket.jpg" alt="Product">
+                                </div>
+                                <div class="part-txt">
+                                    <h4 class="product-name"><a href="shop-details.html">Hoodie Jacket</a></h4>
+                                    <p class="price"><span>P800.00</span>P680.00</p>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-option">
+                                    <ul>
+                                        <li>
+                                            <a role="button" class="add-to-cart">
+                                                <i class="fa-light fa-cart-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="add-to-wish">
+                                                <i class="fa-light fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" class="quick-view">
+                                                <i class="fa-light fa-image"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-details.html" class="view-product">
+                                                <i class="fa-light fa-eye"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- FLASH DEAL SECTION END --------------------------------->
+    <!--------------------------------- BEST SELLER SECTION START --------------------------------->
+    <div class="best-seller py-25">
+        <div class="container">
+            <div class="panel">
+                <div class="panel-header">
+                    <div class="row">
+                        <div class="col-8">
+                            <h2 class="title">Top Sellers</h2>
+                        </div>
+                        <div class="col-4">
+                            <div class="text-end">
+                                <a href="#" class="explore-section">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row g-3">
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/vinyl-flooring.jpg" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Alzon's Tiles Shop</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/eugene's computer parts.jpg" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Eugene's Computer Parts</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/jobstyle hardware.png" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Jobstyle Hardware</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-6">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/loris flower shop.jpg" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Loris Flower Shop</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-none">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/alzon's construction.jpg" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Alzon's Construction Supplies</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-none">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/batang's motor parts.png" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Batang's Motor Parts</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-none">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/gian's vape shop.jpg" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">Gian's Vape Shop</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-none">
+                            <div class="single-box">
+                                <div class="part-img">
+                                    <a href="#"><img src="assets/pics/johnmar's drugstore.jpg" alt="Image"></a>
+                                </div>
+                                <div class="part-txt">
+                                    <a href="#" class="title">John Mar's Drugstore</a>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp rated"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <span>(0)</span>
+                                    </div>
+                                    <a href="#" class="part-btn">Visit Store</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- BEST SELLER SECTION END --------------------------------->
+     <!--------------------------------- HEADER CART LIST END --------------------------------->
+     <div class="top-brand py-25">
+        <div class="container">
+            <div class="panel">
+                <div class="panel-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="title">Top Brands</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row g-lg-3 g-2">
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/ace.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/adidas.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/bench-logo.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/calvin-clein.png" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/GUESS-Logo.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/jag.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/levis.png" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/penshoppe.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/skechers.png" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/Vans-Logo.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/Victorias-Secret-Logo.jpg" alt="brand">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-4">
+                            <div class="logo-box">
+                                <img src="assets/brand logo/pandora-logo.jpg" alt="brand">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- TOP BRANDS SECTION END --------------------------------->
+     <!--------------------------------- TESTIMONIAL SECTION START --------------------------------->
+     <div class="testimonial py-25">
+        <div class="container">
+            <div class="panel panel-2">
+                <div class="heading text-center">
+                    <h2>reviews</h2>
+                </div>
+                <div class="review-slider">
+                    <div class="review-card">
+                        <div class="user">
+                            <div class="part-img">
+                                <div class="avatar">
+                                    <img src="assets/profiles/abe.jpg" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h4>Shinzo Abe</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="main-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, habitasse nec mauris sagittis imperdiet lobortis porttitor
+                            </p>
+                        </div>
+                        <div class="star-wrap">
+                            <div class="star">
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-regular fa-star-sharp"></i>
+                            </div>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="user">
+                            <div class="part-img">
+                                <div class="avatar">
+                                    <img src="assets/profiles/kim jong un.jpg" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h4>Kim Jong-Un</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="main-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, habitasse nec mauris sagittis imperdiet lobortis porttitor
+                            </p>
+                        </div>
+                        <div class="star-wrap">
+                            <div class="star">
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-regular fa-star-sharp"></i>
+                            </div>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="user">
+                            <div class="part-img">
+                                <div class="avatar">
+                                    <img src="assets/profiles/obama.jpg" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h4>Obama</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="main-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, habitasse nec mauris sagittis imperdiet lobortis porttitor
+                            </p>
+                        </div>
+                        <div class="star-wrap">
+                            <div class="star">
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-regular fa-star-sharp"></i>
+                            </div>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="user">
+                            <div class="part-img">
+                                <div class="avatar">
+                                    <img src="assets/profiles/putin.jpg" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h4>Vladimir Putin</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="main-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, habitasse nec mauris sagittis imperdiet lobortis porttitor
+                            </p>
+                        </div>
+                        <div class="star-wrap">
+                            <div class="star">
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-regular fa-star-sharp"></i>
+                            </div>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="user">
+                            <div class="part-img">
+                                <div class="avatar">
+                                    <img src="assets/profiles/duterte.jpg" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h4>Redrigo Duterte</h4>
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="main-txt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, habitasse nec mauris sagittis imperdiet lobortis porttitor
+                            </p>
+                        </div>
+                        <div class="star-wrap">
+                            <div class="star">
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-solid fa-star-sharp"></i>
+                                <i class="fa-regular fa-star-sharp"></i>
+                            </div>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- TESTIMONIAL SECTION END --------------------------------->
+    <!--------------------------------- FOOTER SECTION START --------------------------------->
+    <div class="footer">
+        <div class="main-footer">
+            <div class="container">
+                <div class="custom-row">
+                    <div class="custom-col-2">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <img src="assets/logos/logo.png" alt="Logo">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <span><i class="flaticon-map"></i></span>
+                                    </div>
+                                    <div class="txt">
+                                        <span>4920 Trails End Road Ft United States, FL 33311</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span><i class="flaticon-email"></i></span>
+                                    </div>
+                                    <div class="txt">
+                                        <a href="#">info@example.com</a>
+                                        <a href="#">test@example.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span><i class="flaticon-telephone"></i></span>
+                                    </div>
+                                    <div class="txt">
+                                        <a href="#">+123 456 679 123</a>
+                                        <a href="#">+123 456 789</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="custom-col-2">
+                        <div class="link-wrap">
+                            <div class="footer-link">
+                                <h3 class="footer-title">Information</h3>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="#">Terms Of Use</a></li>
+                                    <li><a href="#">Privacy Policies</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-link">
+                                <h3 class="footer-title">Information</h3>
+                                <ul>
+                                    <li><a href="cart.html">My Order</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="register.html">Login</a></li>
+                                    <li><a href="account.html">Personal Info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="footer-gallery">
+                            <h3 class="footer-title">Social Media Accounts</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://facebook.com" target="_blank">
+                                        <img src="assets/logos/facebook.png" style="height: 80px;width: 80px;" alt="image">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://gmail.com" target="_blank">
+                                        <img src="assets/logos/Gmail-logo.png" style="height: 80px;width: 80px;" alt="image">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com" target="_blank">
+                                        <img src="assets/logos/instagram.png" style="height: 80px;width: 80px;" alt="image">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://tiktok.com" target="_blank">
+                                        <img src="assets/logos/tiktok.png" style="height: 80px;width: 80px;" alt="image">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" target="_blank">
+                                        <img src="assets/logos/twitter.png" style="height: 80px;width: 80px;" alt="image">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com" target="_blank">
+                                        <img src="assets/logos/facebook.png" style="height: 80px;width: 80px;" alt="image">
+                                        <span><i class="fa-brands fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="footer-subscribe">
+                            <h3 class="footer-title">Subscribe</h3>
+                            <p>Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et
+                            </p>
+                            <form>
+                                <input type="email" name="email" placeholder="Your Email">
+                                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; Copyright Revel All Right Reserved</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="part-img d-flex justify-content-md-end justify-content-center">
+                            <img src="assets/images/payment-gateway.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- FOOTER SECTION END --------------------------------->
+     <!-- preloader begin -->
+     <div class="preloader">
+        <img src="assets/images/loader.gif" alt="Gif">
+    </div>
+    <!-- preloader end -->
+
+
+
+    <!--------------------------------- HEADER CART LIST START --------------------------------->
+    <div class="header-cart-wrap" id="headerCartWrap">
+        <div class="cart-list">
+            <div class="title">
+                <h3>Shopping Cart</h3>
+                <button class="cart-close"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <ul>
+                <li>
+                    <a href="shop-details.html">
+                        <div class="part-img">
+                            <img src="assets/images/feat-product-3.jpg" alt="Image">
+                        </div>
+                        <div class="part-txt">
+                            <span class="name">Diamond wedding ring</span>
+                            <span>1 <i class="fa-regular fa-xmark"></i> $5.00</span>
+                        </div>
+                    </a>
+                    <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                </li>
+                <li>
+                    <a href="shop-details.html">
+                        <div class="part-img">
+                            <img src="assets/images/feat-product-2.jpg" alt="Image">
+                        </div>
+                        <div class="part-txt">
+                            <span class="name">Living Summer Chair</span>
+                            <span>1 <i class="fa-regular fa-xmark"></i> $5.00</span>
+                        </div>
+                    </a>
+                    <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                </li>
+                <li>
+                    <a href="shop-details.html">
+                        <div class="part-img">
+                            <img src="assets/images/feat-product-10.jpg" alt="Image">
+                        </div>
+                        <div class="part-txt">
+                            <span class="name">Wireless Headphone</span>
+                            <span>1 <i class="fa-regular fa-xmark"></i> $5.00</span>
+                        </div>
+                    </a>
+                    <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                </li>
+            </ul>
+            <div class="total">
+                <p>Subtotal: <span>$15:00</span></p>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="def-btn">View Cart</a>
+                <a href="#" class="def-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <!--------------------------------- HEADER WISH LIST START --------------------------------->
+    <div class="header-cart-wrap" id="headerWishWrap">
+        <div class="cart-list">
+            <div class="title">
+                <h3>Wish List</h3>
+                <button class="wish-close"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+            <ul>
+                <li>
+                    <a href="shop-details.html">
+                        <div class="part-img">
+                            <img src="assets/images/feat-product-3.jpg" alt="Image">
+                        </div>
+                        <div class="part-txt">
+                            <span class="name">Diamond wedding ring</span>
+                            <span>1 <i class="fa-regular fa-xmark"></i> $5.00</span>
+                        </div>
+                    </a>
+                    <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                </li>
+                <li>
+                    <a href="shop-details.html">
+                        <div class="part-img">
+                            <img src="assets/images/feat-product-2.jpg" alt="Image">
+                        </div>
+                        <div class="part-txt">
+                            <span class="name">Living Summer Chair</span>
+                            <span>1 <i class="fa-regular fa-xmark"></i> $5.00</span>
+                        </div>
+                    </a>
+                    <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                </li>
+                <li>
+                    <a href="shop-details.html">
+                        <div class="part-img">
+                            <img src="assets/images/feat-product-10.jpg" alt="Image">
+                        </div>
+                        <div class="part-txt">
+                            <span class="name">Wireless Headphone</span>
+                            <span>1 <i class="fa-regular fa-xmark"></i> $5.00</span>
+                        </div>
+                    </a>
+                    <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                </li>
+            </ul>
+            <div class="total">
+                <p>Subtotal: <span>$15:00</span></p>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="def-btn">View Wish List</a>
+                <a href="#" class="def-btn">Add All To Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--------------------------------- HEADER WISH LIST END --------------------------------->
+    <!-- SCRIPTS -->
+    <script src="assets/vendor/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendor/js/jquery.flagstrap.min.js"></script>
+    <script src="assets/vendor/js/slick.min.js"></script>
+    <script src="assets/vendor/js/owl.carousel.min.js"></script>
+    <script src="assets/vendor/js/jquery.syotimer.min.js"></script>
+    <script src="assets/vendor/js/jquery-modal-video.min.js"></script>
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
