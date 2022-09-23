@@ -1,6 +1,7 @@
 function zoomIn(item){
-    item.style.height = '450px'
-    item.style.width = '450px'
+    item.style.height = '450px';
+    item.style.width = '450px';
+    
 }
 function zoomOut(item){
     item.style.height = '320px'
