@@ -1,0 +1,15 @@
+Checklist of all pages
+*Pages done
+Login
+Register
+Home Page
+
+*Pages need to adjust
+Shop Page
+Shop Details
+Account Page
+Cart Page
+
+*Need to do
+Admin Page
+Seller Page

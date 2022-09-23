@@ -101,6 +101,7 @@ a {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  
 }
 
 span {
@@ -2877,6 +2878,7 @@ img {
   margin-bottom: 15px;
 }
 .popular-categories .custom-row .custom-col .category-card .part-img a {
+  
   min-height: 137px;
 }
 .popular-categories .custom-row .custom-col .category-card .part-txt {
@@ -3567,6 +3569,7 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .testimonial .review-slider .review-card .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3577,6 +3580,14 @@ img {
   gap: 15px;
   margin-bottom: 13px;
 }
+/* .testimonial .review-slider .review-card .user:hover {
+  transition: .3s;
+  height: 400px;
+  width: 400px;
+  margin-left: -40px;
+  margin-top: -30px;
+  position: absolute;
+} */
 .testimonial .review-slider .review-card .user .part-img {
   width: 60px;
   height: 60px;
@@ -3825,7 +3836,8 @@ img {
 }
 
 .footer {
-  background: #0d0e22;
+  /* background: #0d0e22; */
+  background-color: #0E0E0E;
 }
 .footer.footer-2 .main-footer .footer-subscribe form button {
   background: #e9b808;
@@ -7876,6 +7888,7 @@ img {
     margin-bottom: 10px;
   }
   .popular-categories .custom-row .custom-col .category-card .part-img a {
+    
     min-height: 100px;
   }
 
@@ -7930,6 +7943,7 @@ img {
   }
   .top-rated-n-best-seller .top-product-card .part-img img {
     display: inline-block;
+    
   }
   .top-rated-n-best-seller .top-product-card .part-txt {
     width: calc(100% - 90px);
@@ -8246,6 +8260,7 @@ img {
   }
   .popular-categories .custom-row .custom-col .category-card .part-img a {
     min-height: 80px;
+    
   }
   .popular-categories .custom-row .custom-col .category-card .part-txt h3 {
     font-size: 13px;
@@ -9590,6 +9605,7 @@ img {
   }
   .popular-categories .custom-row .custom-col .category-card .part-img a {
     min-height: 70px;
+    
   }
   .popular-categories .custom-row .custom-col .category-card .part-txt h3 {
     font-size: 12px;
@@ -11594,6 +11610,7 @@ img {
   }
   .popular-categories .custom-row .custom-col .category-card .part-img a {
     min-height: 70px;
+    
   }
   .popular-categories .custom-row .custom-col .category-card .part-txt h3 {
     font-size: 12px;
@@ -17304,4 +17321,100 @@ img {
     line-height: 38px;
     padding: 0 15px;
   }
+}
+
+.sell-button:hover {
+  background-color: lightgray;
+}
+
+#add-items-to-sell:hover {
+  color: crimson;
+  background-color: #f1f2f3;
+}
+
+.adjust-width {
+  width: 200px;
+}
+
+
+/* ZOOM IN AND OUT */
+#itemForZoom:hover{
+  cursor: zoom;
+}
+
+
+
+/* syl john */
+.sell-button:hover {
+  background-color: lightgray;
+}
+
+#add-items-to-sell:hover {
+  color: crimson;
+  background-color: #f1f2f3;
+}
+
+.adjust-width {
+  width: 200px;
+}
+
+.buyer-seller-selector:hover {
+  color: #c91414;
+}
+
+.dark-mode {
+  background-color: #1F1F1F;  
+  color: white;
+  transition: .5s;
+}
+
+#day-night-mode {
+  border: 1px solid black;
+  text-align: center;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  left: 50px;
+  background-color: black;
+  color: white;
+}
+
+.testimonial > .container > .panel > .review-slider > .review-card > .text-wrap {
+  color: black;
+  background-color: black;
+}
+
+.store-content-container {
+  margin-left: 70px;
+  height: 400px;
+  width: 15vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.store-content-container > .store-logo {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+.store-content-container > .store-logo > img {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  margin-left: 10px;
+  border: 2px darkgray solid;
+  margin-bottom: 50px;
+}
+
+.store-content-container > .store-name {
+
+}
+
+.store-content-container > .store-name > h1 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 50%;
+  margin-left: 70px;
+  font-family: "Jost", sans-serif;;
 }
